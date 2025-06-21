@@ -1,0 +1,22 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#1312
+    [34mall[39m: [
+      [34;4mApp\Models\Trip[39;24m {#5965
+        [34mid[39m: [35m1[39m,
+        [34mcompany_name[39m: "[32mشركة القدموس[39m",
+        [34mfrom[39m: "[32mدمشق[39m",
+        [34mto[39m: "[32mحلب[39m",
+        [34mrating[39m: [35m5[39m,
+        [34mtotal_seats[39m: [35m45[39m,
+        [34mavailable_seats[39m: [35m23[39m,
+        [34mac[39m: "[32mAC[39m",
+        [34mprice[39m: [35m25[39m,
+        [34mtrip_date[39m: "[32m2025-05-24[39m",
+        [34mlocation_details[39m: "[32mشارع العدوي[39m",
+        [34msupervisor_name[39m: "[32mمحمد[39m",
+        [34msupervisor_phone[39m: "[32m0934675287356[39m",
+        [34mcreated_at[39m: "[32m2025-05-24 12:26:34[39m",
+        [34mupdated_at[39m: "[32m2025-05-24 12:26:34[39m",
+      },
+    ],
+  }
+
