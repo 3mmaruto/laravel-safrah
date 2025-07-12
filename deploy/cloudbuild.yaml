@@ -1,0 +1,22 @@
+steps:
+  - name: 'gcr.io/cloud-builders/composer'
+    args: ['install', '--no-dev', '--optimize-autoloader']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        cp .env.example .env
+        php artisan config:cache
+        php artisan route:cache
+
+  - name: 'gcr.io/cloud-builders/php'
+    args: ['artisan', 'migrate', '--force']
+
+timeout: 1200s
+
+# Optional: artifact info
+artifacts:
+  files:
+    - '**'
