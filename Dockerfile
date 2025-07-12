@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
 
 # نسخ ملفات المشروع
 COPY . /var/www
+COPY .env /var/www/.env
 WORKDIR /var/www
 
 # Composer
